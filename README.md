@@ -11,6 +11,6 @@ If can't validate a prefix, then: 07, 02, 03 are Romanian, else german
 
 Insert should return the last insert id, and if duplicate found, it should return the original row id
 
+ - copy env.example .env
  - docker-compose -d --build
  - composer install
- - copy env.example .env
