@@ -1,0 +1,20 @@
+{
+  "name": "vendor_name/bpg",
+  "description": "practical test Phonebook for BPG",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "fkan",
+      "email": "shalexander2016@gmail.com"
+    }
+  ],
+  "require": {
+    "ext-pdo": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}
