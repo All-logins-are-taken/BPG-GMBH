@@ -40,7 +40,7 @@ services:
       MYSQL_USER: ${MYSQL_USER}
     volumes:
       - dbdata:/var/lib/mysql
-      - .docker/mysql-dump:/docker-entrypoint-initdb.d
+      - ./docker/mysql-dump:/docker-entrypoint-initdb.d
 
 volumes:
   dbdata:
