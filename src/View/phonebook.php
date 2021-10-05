@@ -1,9 +1,9 @@
 <?php
 
 $output = '';
-$listDivsOpen = '<div class="col border-info bg-success border-end border-bottom pt-1 pb-1 text-center fw-bold text-white">';
+$listDivsOpen = '<div class="col bg-gradient border-info bg-success border-end border-bottom pt-1 pb-1 text-center fw-bold text-white">';
 $listDivsClose = '</div>';
-$listHeaderDivsOpen = '<div class="col border-dark bg-info border-end pt-1 pb-1 text-center fw-bold">';
+$listHeaderDivsOpen = '<div class="col bg-gradient border-dark bg-info border-end pt-1 pb-1 text-center fw-bold">';
 
 /** @var string $options */
 if (!empty($options)) {
@@ -26,12 +26,12 @@ if (!empty($options)) {
                 $output .= '
                     <div class="row">
                         ' . $listDivsOpen . $list["id"] . $listDivsClose .
-                    $listDivsOpen . $list["prefix"] . $listDivsClose .
-                    $listDivsOpen . $list["number"] . $listDivsClose .
-                    $listDivsOpen . $list["name"] . $listDivsClose .
-                    $listDivsOpen . $list["updated_at"] . $listDivsClose .
-                    $listDivsOpen . $list["deleted"] . $listDivsClose .
-                    $listDivsOpen . $action . $listDivsClose . '
+                        $listDivsOpen . $list["prefix"] . $listDivsClose .
+                        $listDivsOpen . $list["number"] . $listDivsClose .
+                        $listDivsOpen . $list["name"] . $listDivsClose .
+                        $listDivsOpen . $list["updated_at"] . $listDivsClose .
+                        $listDivsOpen . $list["deleted"] . $listDivsClose .
+                        $listDivsOpen . $action . $listDivsClose . '
                   </div>
                 ';
             }
@@ -75,12 +75,12 @@ echo '
         <div id="message"></div>
           <div class="row">
             ' . $listHeaderDivsOpen . 'Id' . $listDivsClose .
-    $listHeaderDivsOpen . 'Prefix' . $listDivsClose .
-    $listHeaderDivsOpen . 'Number' . $listDivsClose .
-    $listHeaderDivsOpen . 'Name' . $listDivsClose .
-    $listHeaderDivsOpen . 'UpdatedAt' . $listDivsClose .
-    $listHeaderDivsOpen . 'Deleted' . $listDivsClose .
-    $listHeaderDivsOpen . 'Action' . $listDivsClose . '
+            $listHeaderDivsOpen . 'Prefix' . $listDivsClose .
+            $listHeaderDivsOpen . 'Number' . $listDivsClose .
+            $listHeaderDivsOpen . 'Name' . $listDivsClose .
+            $listHeaderDivsOpen . 'UpdatedAt' . $listDivsClose .
+            $listHeaderDivsOpen . 'Deleted' . $listDivsClose .
+            $listHeaderDivsOpen . 'Action' . $listDivsClose . '
           </div>
             ' . $output . '
 ';

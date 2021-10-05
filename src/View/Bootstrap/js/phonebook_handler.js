@@ -29,7 +29,7 @@ function handler(action, id = 0) {
             }
 
             if (rely.success === true) {
-                messageBox.setAttribute("class", "bg-success text-white p-2 rounded");
+                messageBox.setAttribute("class", "bg-success bg-gradient text-white p-2 rounded mb-2");
 
                 if (action === "add") {
                     setTimeout(window.location.reload.bind(window.location), 1500);
@@ -40,11 +40,11 @@ function handler(action, id = 0) {
                 }
             }
             else {
-                messageBox.setAttribute("class", "bg-danger text-white p-2 rounded");
+                messageBox.setAttribute("class", "bg-danger bg-gradient text-white p-2 rounded mb-2");
             }
         }
         else {
-            messageBox.setAttribute("class", "bg-danger text-white p-2 rounded");
+            messageBox.setAttribute("class", "bg-danger bg-gradient text-white p-2 rounded mb-2");
             messageBox.innerText  = "Server error";
         }
     });
