@@ -14,7 +14,7 @@ Insert should return the last insert id, and if duplicate found, it should retur
 - copy env.example .env
 - docker-compose -d --build
 - composer install
-- execute in DB console CREATE TABLE IF NOT EXISTS `all_phone_book` (
+- execute in any DB console CREATE TABLE IF NOT EXISTS `all_phone_book` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `prefix` varchar(4) NOT NULL COMMENT '+40=ro\r\n+39=de',
   `number` varchar(15) NOT NULL COMMENT 'left trimmed all the leading zeroes',
