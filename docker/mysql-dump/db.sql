@@ -20,6 +20,10 @@ SET time_zone = "+00:00";
 -- Table structure for table `all_phone_book`
 --
 
+CREATE DATABASE bpg;
+
+USE bpg;
+
 CREATE TABLE IF NOT EXISTS `all_phone_book` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `prefix` varchar(4) NOT NULL COMMENT '+40=ro\r\n+39=de',
