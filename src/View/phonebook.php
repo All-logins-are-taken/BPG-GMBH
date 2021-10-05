@@ -1,9 +1,9 @@
 <?php
 
 $output = '';
-$listDivsOpen = '<div class="col bg-gradient border-info bg-success border-end border-bottom pt-1 pb-1 text-center fw-bold text-white">';
+$listDivsOpen = '<div class="col alert alert-success border-success pt-1 pb-1 text-center fw-bold">';
 $listDivsClose = '</div>';
-$listHeaderDivsOpen = '<div class="col bg-gradient border-dark bg-info border-end pt-1 pb-1 text-center fw-bold">';
+$listHeaderDivsOpen = '<div class="col alert alert-info border-info border-end pt-1 pb-1 text-center fw-bold">';
 
 /** @var string $options */
 if (!empty($options)) {
