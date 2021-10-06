@@ -20,7 +20,7 @@ SET time_zone = "+00:00";
 -- Table structure for table `all_phone_book`
 --
 
-CREATE DATABASE bpg;
+CREATE DATABASE IF NOT EXISTS bpg;
 
 USE bpg;
 

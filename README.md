@@ -14,13 +14,4 @@ Insert should return the last insert id, and if duplicate found, it should retur
 - copy env.example .env
 - docker-compose -d --build
 - composer install
-- execute in any DB console CREATE TABLE IF NOT EXISTS `all_phone_book` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `prefix` varchar(4) NOT NULL COMMENT '+40=ro\r\n+39=de',
-  `number` varchar(15) NOT NULL COMMENT 'left trimmed all the leading zeroes',
-  `name` varchar(80) NOT NULL COMMENT 'associate or client name',
-  `updated_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT 'last update timestamp',
-  `deleted` tinyint(4) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`id`),
-  UNIQUE KEY `unique_phone` (`prefix`,`number`)
-  ) ENGINE=MyISAM AUTO_INCREMENT=28 DEFAULT CHARSET=utf8;
+- execute, for instance: docker exec -i bpg-gmbh_mysql_1 mysql -ubpg -pbpg bpg < ./docker/mysql-dump/db.sql to import db.sql
